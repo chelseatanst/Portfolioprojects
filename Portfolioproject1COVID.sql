@@ -78,7 +78,7 @@ on dea.location = vax.location and dea.date = vax.date
 where dea.continent is not null
 order by 2,3
 
--- Because UNLIKE BIGQUERY, ssms doesnt allow you to use a column that you've just created
+-- ssms don't allow you to use a column that you've just created
 -- So we need to create a TEMPTABLE or CTE
 -- CTE
 -- If the number of columns in the CTE is not the same as the columns specified below, it'll give an error
